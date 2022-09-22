@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/text/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .dropdown a,
+        ul,
+        li {
+            list-style: none;
+            text-decoration: none;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #111;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        li a:hover {
+            background-color: yellow;
+            width: 100%;
+        }
+
+        @media (max-width:1470px) {
+            .top {
+                flex-wrap: nowrap;
+            }
+        }
+
+        .top>div {
+            width: 80%;
+        }
+
+        .number a {
+            list-style: none;
+            text-decoration: none;
+        }
+
+        button:hover {
+            background-color: #fff;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="con1" style="position: relative;">
+            <div class="con2">
+                <div class="con3">
+                    <div class="con4"> <input class="con5" type="text" placeholder="검색"></div>
+                    <div class="con4_1"> <input class="con5" type="text" placeholder="검색"></div>
+                </div>
+                <div class="con7">
+                    <div class="con8"> <input class="con9" type="text" placeholder="검색"></div>
+                    <div class="con10"> <input class="con11" type="text" placeholder="검색"></div>
+                </div>
+                <div class="con12">
+                    <button class="con13">조회</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="table">
+            <div class="ta1">
+                <table>
+                    <thead>
+                        <tr class="ta2">
+                            <th>이름</th>
+                            <th>내용</th>
+                            <th>확인</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td class="ta3"><button class="ta5">등록</button></td>
+                            <td class="ta4"><button class="ta5">등록</button></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="number"><a
+                        href="">&#171;</a><a class="nu1" href="">1</a><a class= "nu2"
+                        href="">2</a><a style="margin-left: 5px;" href="">&#187;</a></div>
+            </div>
+        </div>
+
+        <div class="login">
+            <div class="lo1">
+            </div>
+
+            <div class="lo2">
+                    <p>회원가입</p>
+                </div>
+                <div class="lo3">
+                    <p class="lo4">이름</p>
+                    <input class="lo5" type="text" name="username"
+                        placeholder="이름">
+                </div>
+                <div class="lo6">
+                    <p class="lo7">이메일</p>
+                    <input class="lo8" type="text" name="username"
+                        placeholder="이메일">
+                </div>
+                <div class="lo9">
+                    <p class="lo10">비밀번호</p>
+                    <input class="lo11"type="text" name="username"
+                        placeholder="비밀번호">
+                </div>
+                <div class="lo12">
+                    <p class="lo13">주소</p>
+                    <p></p>
+
+                    <input class="lo14" type="text"
+                        name="username" placeholder="주소">
+
+                    <ul class="dropdown">
+                        <li><a href=""><i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="dr1">
+                                <li><a href="">Lorem ipsum, dolor sit amet consectetur</a></li>
+                                <li><a href="">Lorem ipsum, dolor sit amet consectetur</a></li>
+                                <li><a href="">Lorem ipsum, dolor sit amet consectetur</a></li>
+                            </ul>                            
+                    </ul>
+                </div>
+                <button class="dr2"
+                    >회원가입</button>
+            </div>
+        </div>
+
+
+        <!-- <div class="pop_up_warp"
+            style="display: none; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(0,0,0,0.7); overflow: auto;">
+
+            <div class="pop_up" style="position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);">
+
+                <button style="position: absolute; cursor: pointer; top:-30px; right:0; color: #fff;"
+                    btn="closebtn">닫기</button>
+
+                <a href="#">
+                    <img style="height: 50vh;" src="/text/pic03.jpg" alt="">
+                </a>
+            </div>
+        </div> -->
+</body>
+
+</html>

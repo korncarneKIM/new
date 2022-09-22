@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/text/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .dropdown a,
+        ul, li {list-style: none;
+        text-decoration: none;}
+
+        table,
+        th,
+        td {
+            border: 1px solid #111;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        li a:hover {
+            background-color: yellow;
+            width: 100%;
+        }
+
+        @media (max-width:1470px) {
+            .top {
+                flex-wrap: nowrap;
+            }
+        }
+
+        .top>div {
+            width: 80%;
+        }
+
+        .number a {
+            list-style: none;
+            text-decoration: none;
+        }
+
+        button:hover {
+            background-color: #fff;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div style="position: relative;">
+            <div
+                style="width: 80%; margin: 0 auto; display: flex; flex-direction: row; background-color: tan; padding-top: 80px; padding-bottom: 80px;">
+                <div style="flex-wrap: nowrap; margin-left: 50px; display: flex; flex-direction: column; width: 80%;">
+                    <div style="display: flex; flex-wrap: nowrap; margin-bottom: -10px;"> <input
+                            style="padding: 20px; width: 70%;" type="text" placeholder="검색"></div>
+                    <div style="display: flex; flex-wrap: nowrap; margin-top: 20px;"> <input
+                            style="padding: 20px; width: 70%;" type="text" placeholder="검색"></div>
+                </div>
+                <div style="flex-wrap: nowrap; display: flex; flex-direction: column; width: 80%;">
+                    <div style="display: flex; flex-wrap: nowrap; margin-bottom: -10px;"> <input
+                            style="padding: 20px; width: 70%;" type="text" placeholder="검색"></div>
+                    <div style="display: flex; flex-wrap: nowrap; margin-top: 20px;"> <input
+                            style="padding: 20px; width: 70%;" type="text" placeholder="검색"></div>
+                </div>
+                <div style="display: flex; position: absolute; bottom: 10%; left: 45%;">
+                    <button style="border: 1px solid tan; padding: 10px 20px 10px 20px;">조회</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="table" style="width: 100%; display:inline">
+            <div
+                style="display: flex; flex-direction: column; align-items: left; align-content: center; background-color: #fff; width: 80%; margin: 0 auto; height: 200px;">
+                <table>
+                    <thead>
+                        <tr style="text-align: left;">
+                            <th>이름</th>
+                            <th>내용</th>
+                            <th>확인</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td style="border-right:none; width: 100px; text-align: center;"><button
+                                    style="border: 0; outline: 0; padding: 5px 10px 5px 10px;">등록</button></td>
+                            <td style="border-left:none; width: 100px; text-align: center;"><button
+                                    style="border: 0; outline: 0; padding: 5px 10px 5px 10px;">등록</button></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="number" style="margin-top: 50px; display: block;  width: 100%; text-align: center;"><a
+                        href="">&#171;</a><a style="margin-left: 5px;" href="">1</a><a style="margin-left: 5px;"
+                        href="">2</a><a style="margin-left: 5px;" href="">&#187;</a></div>
+            </div>
+        </div>
+
+        <div class="login" style="background-color: tan; width: 600px; text-align: center; margin: 0 auto;">
+            <div style="padding-top: 40px; text-align: center; height: 100px; background-color:rgb(211, 152, 75);">
+            </div>
+
+            <div style="text-align: left; margin-left: 50px;">
+                <div style="margin-top: 50px; margin-bottom: 50px;">
+                    <p>회원가입</p>
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <p style="margin-bottom: 20px;">이름</p>
+                    <input style="border: 1px solid tan; padding: 20px; width: 90%;" type="text" name="username"
+                        placeholder="이름">
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <p style="margin-bottom: 20px;">이메일</p>
+                    <input style="border: 1px solid tan; padding: 20px; width: 90%;" type="text" name="username"
+                        placeholder="이메일">
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <p style="margin-bottom: 20px;">비밀번호</p>
+                    <input style="border: 1px solid tan; padding: 20px; width: 90%;" type="text" name="username"
+                        placeholder="비밀번호">
+                </div>
+                <div style="position: relative; margin-bottom: 30px;">
+                    <p style="margin-bottom: 20px;">주소</p>
+                    <p></p>
+
+                    <input style=" border: 1px solid tan; padding: 20px; margin-bottom: 20px; width: 90%;" type="text"
+                        name="username" placeholder="주소">
+
+                    <ul class="dropdown" style="position: absolute; top: 50%; right: -45%;">
+                        <li><a href=""><i class="fa-solid fa-caret-down"></i></a>
+                        <ul style=" background-color: #fff; line-height: 1.6; padding: 10px 20px 10px 20px;">
+                            <li><a href="">Lorem ipsum, dolor sit amet consectetur</a></li>
+                            <li><a href="">Lorem ipsum, dolor sit amet consectetur</a></li>
+                            <li><a href="">Lorem ipsum, dolor sit amet consectetur</a></li>
+                        </ul>
+                        </i>                        
+                    </ul>
+                </div>
+                <button
+                    style="border: 1px solid tan; width: 90%; padding: 20px 15px 20px 15px; margin-bottom: 50px;">회원가입</button>
+            </div>
+        </div>
+
+
+        <!-- <div class="pop_up_warp"
+            style="display: none; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(0,0,0,0.7); overflow: auto;">
+
+            <div class="pop_up" style="position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);">
+
+                <button style="position: absolute; cursor: pointer; top:-30px; right:0; color: #fff;"
+                    btn="closebtn">닫기</button>
+
+                <a href="#">
+                    <img style="height: 50vh;" src="/text/pic03.jpg" alt="">
+                </a>
+            </div>
+        </div> -->
+</body>
+
+</html>
